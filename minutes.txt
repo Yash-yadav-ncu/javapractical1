@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+class minutes {
+	public static void main (String[args]){
+	Scanner scanner = new Scanner(System.in);
+	System.out.print("Enter time in minutes:  ");
+	int min = scanner.nextInt();
+
+	int days = (min/1440);
+	int months = (min/43200);
+	int years = (min/518400);
+
+	System.out.print("The entered minutes are equivalent to "+days+" days OR "+months+" months OR "+years+" Years"); 
+	}
+}	
